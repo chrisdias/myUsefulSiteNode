@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  div.centered
+    button(type='button', class='btn btn-lg btn-toggle', data-toggle='button', aria-pressed='false', autocomplete='off', onclick='togglePaw()', id='main-button')
+      div.handle
+
+    div.catpaw-container
+      img.catpaw-image(alt='myImage', src='../images/dogpaw.png')
+
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js')
+    script(src='../javascripts/main.js')
+    script
+      $(window).load(function () { $("body").removeClass("preload"); });
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js', integrity='sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa', crossorigin='anonymous')
+
